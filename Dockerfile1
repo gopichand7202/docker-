@@ -1,0 +1,7 @@
+FROM openjdk:19-jdk-slim
+
+WORKDIR /app
+
+COPY jar/spring-boot-postgresql-base-project-0.0.1-SNAPSHOT.jar app.jar
+
+CMD ["java","-jar","app.jar"]
